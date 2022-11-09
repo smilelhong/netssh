@@ -2,9 +2,9 @@ package huawei
 
 import (
 	"errors"
-	"netssh/connections"
-	"netssh/driver"
-	"netssh/types"
+	"github.com/smilelhong/netssh/pkg/connections"
+	"github.com/smilelhong/netssh/pkg/driver"
+	"github.com/smilelhong/netssh/pkg/types"
 )
 
 func NewDevice(connection connections.Connection, DeviceType string) (types.Device, error) {

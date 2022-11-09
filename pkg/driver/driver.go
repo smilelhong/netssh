@@ -2,7 +2,7 @@ package driver
 
 import (
 	"errors"
-	"netssh/connections"
+	"github.com/smilelhong/netssh/pkg/connections"
 	"regexp"
 	"time"
 )

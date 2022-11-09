@@ -1,6 +1,6 @@
 package driver
 
-import "netssh/connections"
+import "github.com/smilelhong/netssh/pkg/connections"
 
 type IDriver interface {
 	Connect() error

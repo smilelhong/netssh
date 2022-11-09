@@ -1,9 +1,9 @@
 package pkg
 
 import (
-	"netssh/connections"
-	huawei "netssh/lib/huawei"
-	"netssh/types"
+	"github.com/smilelhong/netssh/pkg/connections"
+	"github.com/smilelhong/netssh/pkg/lib/huawei"
+	"github.com/smilelhong/netssh/pkg/types"
 	"strings"
 )
 

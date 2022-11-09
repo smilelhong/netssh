@@ -2,7 +2,7 @@ package huawei
 
 import (
 	"errors"
-	"netssh/driver"
+	"github.com/smilelhong/netssh/pkg/driver"
 )
 
 type HuaWeiDevice struct {
