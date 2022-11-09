@@ -44,11 +44,16 @@ func (d *Driver) SendCommandsSet(cmds []string, expectPattern string) (string, e
 	}
 	var results string
 
+	//for _, cmd := range cmds {
+	//	out, _ := d.SendCommand(cmd, expectPattern)
+	//	results += out
+	//}
+
 	for _, cmd := range cmds {
-		out, _ := d.SendCommand(cmd, expectPattern)
-		results += out
+		d.Connection.Write(cmd)
 	}
-	return results, nil
+	results, err := d.ReadUntil(expectPattern)
+	return results, err
 
 }
 

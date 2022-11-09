@@ -43,7 +43,7 @@ func (h *HuaWeiDevice) SendConfigSet(cmds []string) (string, error) {
 
 	cmds = append(cmds, "return")
 
-	out, err := h.Driver.SendCommandsSet(cmds, "["+h.Prompt+"]")
+	out, err := h.Driver.SendCommandsSet(cmds, h.Prompt)
 	results += out
 
 	return results, err
