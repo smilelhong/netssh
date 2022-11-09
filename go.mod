@@ -1,4 +1,4 @@
-module netssh
+module github.com/smilelhong/netssh
 
 go 1.18
 
