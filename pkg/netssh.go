@@ -1,4 +1,4 @@
-package pkg
+package netssh
 
 import (
 	"github.com/smilelhong/netssh/pkg/connections"
