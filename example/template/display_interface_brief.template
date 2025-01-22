@@ -1,0 +1,8 @@
+Value Interface (\S+\d+/\d+/\d+)
+Value IP (\d+.\d+.\d+.\d+/\d+|unassigned)
+Value Physical (up|down|!down|\*down|\^down)
+Value Protocol (up|down|!down|\*down|\^down)
+Value VPN (\S+)
+
+Start
+ ^\s*${Interface}\s+${IP}\s+${Physical}\s+${Protocol}\s+${VPN} -> Record
