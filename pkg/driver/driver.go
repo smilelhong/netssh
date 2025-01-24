@@ -88,7 +88,7 @@ func (d *Driver) ReadUntil(pattern string) (string, error) {
 		select {
 		case recv := <-buffChan:
 			outputChan <- recv
-		case <-time.After(time.Duration(4) * time.Second):
+		case <-time.After(time.Duration(10) * time.Second):
 			err = errors.New("timeout while reading, read pattern not found pattern: " + pattern)
 			close(outputChan)
 		}
